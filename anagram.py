@@ -4,11 +4,12 @@ str_2 = input("Enter second string: ")
 
 def check_anagram():
     if sorted(str_1) == sorted(str_2):
-        print("string are Anagram")
+        return "string are Anagram"
 
     else:
-        print("string are not Anagram")
+        return "string are not Anagram"
 
 
 if __name__ == '__main__':
-    check_anagram()
+    result = check_anagram()
+    print(result)
